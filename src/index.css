@@ -1,8 +1,50 @@
+html{
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .App{
     font-family: 'Roboto', sans-serif;
-
+}
+.img-header{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-header > ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   
+}
+.search-header > ul >li:hover{
+    background-color: #062226 ;
+    color: white;
+    cursor: pointer;
+}
+.form-header{
+    font-size: 1.2rem;
 }
 
+.search-header{
+    margin: 0;
+    padding: 0;
+    
+    position: absolute;
+    top: 90%;
+    z-index: 1;
+    background-color: white;
+
+}
+img{
+    width: 100%;
+}
 .location-residents{
     display: flex;
     flex-wrap: wrap;
@@ -65,3 +107,25 @@ padding: 15px;
     color: #7e7e7e;
 
 }
+.errorMessage{
+    color: #fff;
+    background-color: red;
+    border-radius: 10px;
+    padding: 5px 15px;
+    width: max-content;
+    position: absolute;
+    top: 5px;
+    right: -100%;
+    animation: 0.3s ease-in forwards showError; 
+}
+
+.errorMessage p {
+    margin: 0;
+}
+
+@keyframes showError{
+    0%{right: -100%;}
+    50%{right: -50%;}
+    100%{right: 10px;}
+}
+

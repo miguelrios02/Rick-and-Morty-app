@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const ErrorMessage = () => {
   return (
-    <div><p>
-        not foundthis dimension
-        </p></div>
-  )
-}
+    <article className="errorMessage">
+      <p>not found this dimension</p>
+    </article>
+  );
+};
 
-export default ErrorMessage
+export default ErrorMessage;
