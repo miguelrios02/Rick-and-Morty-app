@@ -20,11 +20,13 @@ const ResidentCard = ({urlResident}) => {
         </div>
     </header>
     <section className='resident-card_body'>
-        <h2>{resident?.name}</h2>
+        <div>
+            <h2>{resident?.name}</h2>
+        </div>
         <ul>
-            <li><span>Specie: </span> {resident?.species}</li>
-            <li><span>Origin:</span>{resident?.origin.name}</li>
-            <li><span>Episodes where appear</span>{resident?.episode.length}</li>
+            <li><span>SPACIE </span> {resident?.species}</li>
+            <li><span>ORIGIN</span>{resident?.origin.name}</li>
+            <li><span>EPISODES WHERE APPEAR</span>{resident?.episode.length}</li>
         </ul>
     </section>
    </article>

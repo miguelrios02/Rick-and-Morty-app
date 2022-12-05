@@ -6,7 +6,8 @@ const ResidentList = ({location}) => {
     <section className='location-residents'>
     {
       location?.residents.map(
-        urlResident => (<ResidentCard key={urlResident} urlResident={urlResident}/>)
+        urlResident => (<ResidentCard key={urlResident}
+        urlResident={urlResident}/>)
       )
     }
   </section>

@@ -8,6 +8,40 @@ html{
 }
 .App{
     font-family: 'Roboto', sans-serif;
+    background-color: #05292E;
+}
+.locationInfo{
+    display: flex;
+    color: white;
+    background-color: #062226;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.locationInfo-ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+    
+   
+}
+.locationInfo> ul > li{
+    font-size: 0.9rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    justify-content: flex-start;
+    
+}
+.locationInfo> ul > li > span{
+    font-size: 1.1rem;
+  
 }
 .img-header{
     position: relative;
@@ -101,12 +135,21 @@ padding: 15px;
     border-top-right-radius: 10px;;
 }
 
-.resident-card_body > ul >li{
+.resident-card_body span{
     display: flex;
     flex-direction: column;
     color: #7e7e7e;
-
+    font-size: 0.8rem;
 }
+.resident-card_body div{
+   padding-bottom: 10px; 
+   margin-bottom: 10px;
+   border-bottom: 0.5px solid #084851;
+   font-weight: 100;
+}
+.resident-card_body h2{
+    font-weight: 100;
+ }
 .errorMessage{
     color: #fff;
     background-color: red;

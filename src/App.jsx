@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import getRandomNumber from "./utils/getRandomNumber";
 import axios from "axios";
@@ -7,7 +6,7 @@ import LocationInfo from "./componets/LocationInfo";
 import LocationFilter from "./componets/LocationFilter";
 import ErrorMessage from "./componets/ErrorMessage";
 import ResidentList from "./componets/ResidentList";
-//import img1 from "../public/rickandmorty.png";
+import rickMorty from "./assets/img/rickAndMorty.png"
 
 function App() {
   const [location, setLocation] = useState();
@@ -56,7 +55,7 @@ function App() {
   return (
     <div className="App">
       <div className="img-header">
-      
+      <img src={rickMorty} alt="rickMorty" />
         <div className="search-header">
           <form  onSubmit={handleSubmit}>
             <input
