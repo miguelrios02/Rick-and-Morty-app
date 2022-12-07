@@ -66,7 +66,7 @@ function App() {
               onChange={handleChangeInput}
               placeholder="seach dimension"
             />
-            <button className="form-header" type="submit"> Search</button>
+            <button className="form-header button_form" type="submit"> Search</button>
             {showError ? <ErrorMessage /> : ""}
           </form>
           <LocationFilter
