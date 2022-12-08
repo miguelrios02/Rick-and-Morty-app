@@ -29,7 +29,7 @@ function App() {
           setShowError(true);
           setTimeout(() => {
             setShowError(false);
-          }, 4200);
+          }, 2200);
           console.log(err);
         });
     } else {
