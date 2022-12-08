@@ -14,9 +14,10 @@ axios.get(URL)
 .catch(err=>console.log(err))
 }, [locationName])
 
+
   return (
     <ul>{
-        locationsOptions?.map(locationOption =><li onClick={()=>getNewLocation(locationOption.url, locationOption.name, {showvalue})} key ={locationOption.url}>{locationOption.name}</li>)
+        locationsOptions?.map(locationOption =><li onClick={()=>getNewLocation(locationOption.url, locationOption.name)} key ={locationOption.url}>{locationOption.name}</li>)
         }
         </ul>
   )

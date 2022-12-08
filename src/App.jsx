@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import getRandomNumber from "./utils/getRandomNumber";
 import axios from "axios";
-import LocationInfo from "./componets/LocationInfo";
-import LocationFilter from "./componets/LocationFilter";
-import ErrorMessage from "./componets/ErrorMessage";
-import ResidentList from "./componets/ResidentList";
-import rickMorty from "./assets/img/rickAndMorty.png"
+import LocationInfo from "./components/LocationInfo";
+import LocationFilter from "./components/LocationFilter";
+import ErrorMessage from "./components/ErrorMessage";
+import ResidentList from "./components/ResidentList";
+import rickMorty from "./assets/img/rickAndMorty.jpg"
 
 function App() {
   const [location, setLocation] = useState();
@@ -49,7 +49,10 @@ function App() {
     setLocationName(name);
     axios
       .get(URL)
-      .then((res) => setLocation(res.data))
+      .then(
+        (res) =>{ setLocation(res.data)
+        }
+      )
       .catch((err) => console.log(err));
   };
   return (

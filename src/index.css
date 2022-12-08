@@ -66,6 +66,7 @@ html{
     font-size: 1.2rem;
     border-radius: 2px;
     box-shadow: 0 -15px 40px #084851;
+    padding: 0.3rem;
     
 
 }
@@ -79,7 +80,7 @@ html{
     padding: 0;
     
     position: absolute;
-    top: 90%;
+    top: 85%;
     z-index: 1;
     background-color: white;
 
