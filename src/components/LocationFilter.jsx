@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
-const LocationFilter = ({locationName,getNewLocation }) => {
+const LocationFilter = ({locationName,getNewLocation,showlist}) => {
     const [locationsOptions, setLocationsOptions] = useState()
     
 useEffect(() => {
@@ -16,7 +16,9 @@ axios.get(URL)
 
   return (
     <ul>{
-        locationsOptions?.map(locationOption =><li onClick={()=>getNewLocation(locationOption.url, locationOption.name)} key ={locationOption.url}>{locationOption.name}</li>)
+        locationsOptions?.map(locationOption =><li
+          onClick={()=>getNewLocation(locationOption.url, locationOption.name )} 
+          key ={locationOption.url}>{showlist?"":locationOption.name}</li>)
         }
         </ul>
   )

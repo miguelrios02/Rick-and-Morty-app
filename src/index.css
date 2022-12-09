@@ -78,7 +78,6 @@ html{
 .search-header{
     margin: 0;
     padding: 0;
-    
     position: absolute;
     top: 85%;
     z-index: 1;

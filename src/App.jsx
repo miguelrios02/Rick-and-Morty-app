@@ -12,6 +12,7 @@ function App() {
   const [location, setLocation] = useState();
   const [locationName, setLocationName] = useState();
   const [showError, setShowError] = useState(false);
+  const [showlist, setShowlist] = useState(false)
   getRandomNumber();
   const URL = "https://rickandmortyapi.com/api/location/127";
   useEffect(() => {
@@ -44,13 +45,16 @@ function App() {
 
   const handleChangeInput = (event) => {
     setLocationName(event.target.value);
+    setShowlist(false)
   };
   const getNewLocation = (URL, name) => {
+
     setLocationName(name);
     axios
       .get(URL)
       .then(
         (res) =>{ setLocation(res.data)
+          setShowlist(true)
         }
       )
       .catch((err) => console.log(err));
@@ -75,6 +79,7 @@ function App() {
           <LocationFilter
             locationName={locationName}
             getNewLocation={getNewLocation}
+            showlist={showlist}
           />
         </div>
       </div>
